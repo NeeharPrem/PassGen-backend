@@ -53,7 +53,7 @@ mongoose.connect(mongoURI)
         }
     });
 
-app.post('/login', async (req, res) => {
+app.post('login', async (req, res) => {
     const { email, password,id} = req.body;
 
     if (!email || !password) {
